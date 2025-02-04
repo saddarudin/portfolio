@@ -1,0 +1,462 @@
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    /* color: #fff; */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #2193b0,   #6dd5ed);
+    
+  }
+  
+  /* Move Titles to the Top */
+  .section-title {
+    color:#ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Navigation Bar */
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f4a261;
+  }
+  
+  /* Home Section with Background Image */
+  #home {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-container {
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Left Side (Text) */
+  .home-text {
+    flex: 1;
+    padding-left: 50px;
+    text-align: left;
+  }
+  
+  .home-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color:#ffffff;
+  }
+  
+  .home-text p {
+    font-size: 1em;
+    margin-top: 30px;
+    margin-left: 200px;
+    color:#E0E0E0;
+  }
+  
+  /* Right Side (Image) */
+  .home-image {
+    flex: 1;
+    display: flex;
+    /* margin-top: 50px; */
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image img {
+    width: 100%;
+    height: 700px;
+    max-width: 600px;
+  
+  }
+  
+  
+  /* About Section */
+  #about {
+    padding: 100px 20px 20px 20px;
+    position: relative;
+    height: auto;
+  }
+  
+  
+  /* Layout */
+  .about-container {
+    display: flex;
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Left Side (Text - 70%) */
+  .about-text {
+    flex: 7;
+    padding: 30px;
+    font-size: 0.8em;
+    text-align: justify;
+    color: #E0E0E0;
+  }
+  
+  /* Individual Sections */
+  .about-section {
+    margin-bottom: 20px;
+  }
+  
+  .about-section h3{
+    color:#070707;
+  }
+  
+  /* Education Section */
+  .education {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+    /* color: #fff; */
+  }
+  
+  .edu-title {
+    /* font-weight: bold; */
+    min-width: 140px; /* Keeps titles aligned */
+  }
+  
+  .edu-desc {
+    flex: 1;
+  }
+  
+  /* Hobbies */
+  .about-section ul {
+    list-style-type:circle; /* Ensures bullet points appear */
+    padding-left: 20px; /* Space for bullets */
+    display: flex; /* Aligns items in one line */
+    flex-wrap: wrap; /* Ensures items wrap if they overflow */
+    gap: 30px; /* Spacing between items */
+  }
+  
+  .about-section ul li {
+    display: list-item; /* Restores bullet points */
+  }
+  
+  
+  
+  
+  /* Experience Section */
+  #experience {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    height: auto;
+  }
+  
+  
+  /* Experience Content Layout */
+  .experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px; /* Space below the title */
+  }
+  
+  /* Left Side: Image */
+  .experience-image img {
+    width: 100%;
+    max-width: 650px; /* Adjust width as needed */
+    height: 500px;
+    border-radius: 10px;
+  }
+  
+  /* Right Side: Text */
+  .experience-text {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .experience-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color:#060606;
+  }
+  
+  .experience-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color:#E0E0E0;
+  }
+  
+  
+
+  /* Projects Section */
+#projects {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    height: auto;
+  }
+  
+  /* Projects Grid */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    max-width: 1900px;
+    margin: 170px 100px 20px;
+  }
+  
+  /* Individual Project Card */
+  .project-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Soft white border */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hover Effect */
+  .project-card:hover {
+    transform: scale(1.05);
+    border-color: #00A8E8; /* Blue glow */
+    box-shadow: 0px 0px 15px rgba(0, 168, 232, 0.8);
+  }
+  
+  
+  /* Project Content */
+  .project-card-content {
+    padding: 15px;
+  }
+  
+  /* Clickable Project Title */
+  .project-card h5 a {
+    text-decoration: none;
+    color: rgb(8, 8, 8) !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .project-card h5 a:hover {
+    color: #e88300 !important;
+  }
+  
+  /* Project Description */
+  .project-card p {
+    font-size: 0.9em;
+    color: #E0E0E0 !important;
+    margin-top: 10px;
+  }
+  
+  
+  /* Achievements Section */
+#achievements {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    height: auto;
+  }
+  
+  /* Grid Styling for Achievements */
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    padding: 170px 20px 20px;
+  }
+  
+  /* Each Achievement Item Styling */
+  .achievement-item {
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Soft white border */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hover Effect */
+  .achievement-item:hover {
+    transform: scale(1.05);
+    border-color: #e8008b; /* Blue glow */
+    box-shadow: 0px 0px 15px #93e800;
+  }
+  
+  /* Achievement Title */
+  .achievement-item h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 3) !important; /* White title */
+    font-weight: bold;
+  }
+  
+  /* Achievement List */
+  .achievement-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* List Items */
+  .achievement-item ul li {
+    font-size: 0.5em;
+    color: #510e0e !important; /* Light gray text */
+    margin-bottom: 5px;
+  }
+  
+  /* Links inside Achievements */
+  .achievements-grid a {
+    text-decoration: none; /* Removes underline */
+    color: #510e0e; /* Default color */
+    transition: color 0.3s;
+  }
+  
+  .achievements-grid a:hover {
+    color: #e88300 !important; /* Blue on hover */
+  }
+  
+  
+  
+  
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: auto;
+  }
+  
+  .contact-container {
+    display: flex;
+    width: 100%;
+    max-width: 1900px;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .contact-info h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #fff;
+  }
+  
+  .contact-info p {
+    font-size: 2rem;
+    color: #E0E0E0;
+    margin-top: 0.8rem;
+  }
+  
+  .contact-info .contact-details {
+    margin-top: 1rem;
+  }
+  
+  .contact-info .contact-details p {
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+    color: #E0E0E0;
+  }
+  
+  .contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    width: 700px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  
+  .social-media {
+    margin-bottom: 1rem;
+  }
+  
+  .social-media a {
+    margin: 0 15px;
+    display: inline-block;
+  }
+  
+  .social-media img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1);
+  }
+  
+  footer p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  
+  /* Section Styling */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-bottom: 10px solid #3e3d3d;
+  }
+  
